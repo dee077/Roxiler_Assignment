@@ -48,7 +48,7 @@ const socials = [
     icon: <img src={googleDriveLogo} alt="Postman" className="w-8 h-8 mr-4" />,
     title: "Resume",
     description: "Checkout my updated Resume.",
-    link: "https://drive.google.com/file/d/142wFlytGNm2kwQX0BPIlF7-jzD1bIKBk/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1G9MGApDPl_4zOc0jwQOfn6rZg_qKH8g4/view?usp=sharing",
   },
 ];
 
