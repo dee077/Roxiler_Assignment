@@ -7,6 +7,7 @@ import axios from "axios";
 import { Statistics } from "../components/Statistics";
 import BarChart from "../components/BarChart";
 import ResourcesSection from "../components/ResourcesSection";
+import { DOMAIN } from "../utils/constants";
 
 const TransactionPage = () => {
   const [transactions, setTransactions] = useState([]);
@@ -20,7 +21,7 @@ const TransactionPage = () => {
   const fetchTransactions = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/list-transactions",
+        DOMAIN + "/api/list-transactions",
         {
           params: { month, search, page, perPage: 10 },
         }
@@ -34,7 +35,7 @@ const TransactionPage = () => {
 
   const fetchStatistics = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/statistics", {
+      const response = await axios.get("/api/statistics", {
         params: { month },
       });
       console.log(response.data);

@@ -11,6 +11,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { DOMAIN } from "../utils/constants";
 
 // Register necessary Chart.js components
 ChartJS.register(
@@ -32,7 +33,7 @@ const BarChart = ({ month }) => {
     const fetchChartData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/bar-chart",
+          DOMAIN + "/api/bar-chart",
           {
             params: { month },
           }
@@ -42,11 +43,11 @@ const BarChart = ({ month }) => {
 
         // Prepare data for chart
         setChartData({
-          labels: data.map((item) => item.range),
+          labels: data?.map((item) => item.range),
           datasets: [
             {
               label: "Number of Items",
-              data: data.map((item) => item.count),
+              data: data?.map((item) => item.count),
               backgroundColor: "rgba(75, 192, 192, 0.6)",
               borderColor: "rgba(75, 192, 192, 1)",
               borderWidth: 1,

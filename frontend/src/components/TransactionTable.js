@@ -16,7 +16,7 @@ const TransactionTable = ({ transactions }) => {
         </tr>
       </thead>
       <tbody>
-        {transactions.map((transaction) => (
+        {transactions?.map((transaction) => (
           <tr
             key={transaction.id}
             className="border-t bg-yellow-100 border-yellow-200 hover:bg-yellow-50 transition duration-200 ease-in-out"

@@ -10,7 +10,7 @@ const MonthSelector = ({ selectedMonth, onChange }) => {
         onChange={(e) => onChange(e.target.value)}
         className="p-3 pl-6 pr-10 border-2 border-yellow-300 focus:border-yellow-400 bg-yellow-100 rounded-full text-yellow-900 shadow-md focus:bg-yellow-50 transition duration-300 ease-in-out outline-none focus:ring-2 focus:ring-yellow-300 appearance-none"
       >
-        {months.map((month) => (
+        {months?.map((month) => (
           <option key={month} value={month} className="text-yellow-900">
             {month}
           </option>

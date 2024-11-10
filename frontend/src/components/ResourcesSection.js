@@ -59,7 +59,7 @@ const ResourcesSection = () => {
       <div className="mb-12">
         <h2 className="my-5 text-2xl font-bold mb-4">Project Resources</h2>
         <div className="flex gap-5">
-          {resources.map((resource) => (
+          {resources?.map((resource) => (
             <a
               key={resource.id}
               href={resource.link}
@@ -81,7 +81,7 @@ const ResourcesSection = () => {
       <div>
         <h2 className="text-2xl font-bold mb-4">My Socials</h2>
         <div className="flex gap-5">
-          {socials.map((social) => (
+          {socials?.map((social) => (
             <a
               key={social.id}
               href={social.link}
