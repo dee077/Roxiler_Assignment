@@ -22,7 +22,7 @@ All backend APIs are implemented using **Express.js** in Node.js. These APIs pro
 ### Key Functionalities
 
 1. **Data Initialization**:
-   - Fetches data from a third-party API at [`https://s3.amazonaws.com/roxiler.com/product_transaction.json`](https://s3.amazonaws.com/roxiler.com/product_transaction.json) and seeds it into the MongoDB database. The data is structured efficiently to enable fast querying and retrieval.
+   - Fetches data from a third-party API at [https://s3.amazonaws.com/roxiler.com/product_transaction.json](https://s3.amazonaws.com/roxiler.com/product_transaction.json) and seeds it into the MongoDB database. The data is structured efficiently to enable fast querying and retrieval.
 
 2. **API Endpoints**:
    - **Transaction Listing**: Allows searching, filtering by product title/description/price, and paginating through all    
