@@ -83,7 +83,7 @@ Follow these steps to get the project running locally:
    PORT=5000
    ```
 
-4. **Start Backend and Frontend:**:
+4. **Start Backend and Frontend**:
    In Terminal 1:
    ```bash
    cd frontend
@@ -100,7 +100,17 @@ Follow these steps to get the project running locally:
 
 The following API endpoints have been created to fulfill the assignment requirements. Each endpoint accepts a month as input, which is matched against the `dateOfSale` field regardless of the year.
 
-### 1. List All Transactions
+### 1. Initialize Database
+   - **Endpoint**: `GET /api/initialize-db`
+   - **Description**: Initializes the database by fetching the product transaction data from a third-party API 
+      (`https://s3.amazonaws.com/roxiler.com/product_transaction.json`) and populating the MongoDB database with seed data. 
+      This is a one-time setup endpoint to populate the database with transaction records.
+   - **Example Request**:
+     ```http
+     GET https://roxiler-assignment-be.vercel.app/api/init
+     ```
+
+### 2. List All Transactions
    - **Endpoint**: `GET /api/transactions`
    - **Description**: Lists all product transactions, with support for search and pagination.
    - **Parameters**:
@@ -109,10 +119,10 @@ The following API endpoints have been created to fulfill the assignment requirem
      - `perPage` (optional): Number of records per page (default: 10).
    - **Example Request**:
      ```http
-     GET /api/transactions?search=sample&perPage=5&page=1
+     GET https://roxiler-assignment-be.vercel.app/api/list-transactions
      ```
 
-### 2. Transaction Statistics
+### 2. Statistics
    - **Endpoint**: `GET /api/statistics`
    - **Description**: Provides key statistics for a selected month.
    - **Response Data**:
@@ -121,7 +131,7 @@ The following API endpoints have been created to fulfill the assignment requirem
      - `notSoldItems`: Total number of not-sold items for the month.
    - **Example Request**:
      ```http
-     GET /api/statistics?month=January
+     GET https://roxiler-assignment-be.vercel.app/api/list-transactions
      ```
 
 ### 3. Bar Chart Data (Price Range Analysis)
@@ -140,7 +150,7 @@ The following API endpoints have been created to fulfill the assignment requirem
      - `901+`
    - **Example Request**:
      ```http
-     GET /api/barchart?month=January
+     GET https://roxiler-assignment-be.vercel.app/api/bar-chart?month=March
      ```
 
 ### 4. Pie Chart Data (Category Analysis)
@@ -148,7 +158,7 @@ The following API endpoints have been created to fulfill the assignment requirem
    - **Description**: Provides data for a pie chart showing unique categories and the number of items in each category for the selected month.
    - **Example Request**:
      ```http
-     GET /api/piechart?month=January
+     GET https://roxiler-assignment-be.vercel.app/api/pie-chart?month=March
      ```
 
 ### 5. Combined Data (All APIs in One)
@@ -156,7 +166,7 @@ The following API endpoints have been created to fulfill the assignment requirem
    - **Description**: Combines responses from the `transactions`, `statistics`, `barchart`, and `piechart` endpoints for comprehensive data analysis.
    - **Example Request**:
      ```http
-     GET /api/combined?month=January
+     GET https://roxiler-assignment-be.vercel.app/api/combined-data?month=March
      ```
 
 
