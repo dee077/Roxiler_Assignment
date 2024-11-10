@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaRocket } from "react-icons/fa";
 
 const postmanLogo = 'https://cdn.iconscout.com/icon/free/png-256/free-postman-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945092.png?f=webp&w=256';
 const googleDriveLogo = 'https://cdn-icons-png.flaticon.com/512/5968/5968523.png'
@@ -10,14 +10,14 @@ const resources = [
     icon: <img src={postmanLogo} alt="Postman" className="w-8 h-8 mr-4" />,
     title: "Postman Workspace",
     description: "Access API collections and test this project's api endpoints.",
-    link: "https://www.postman.com/workspace", 
+    link: "https://www.postman.com/flight-physicist-9054540/workspace/roxiler-assignment/collection/27758306-3059ccef-c1bd-4e5b-aa40-4fbf3e78c396?action=share&creator=27758306", 
   },
   {
     id: 2,
     icon: <FaGithub className="text-gray-800 text-3xl mr-4" />,
     title: "GitHub Repository",
-    description: "View and manage this project's code on my GitHub.",
-    link: "https://github.com/dee077", 
+    description: "Read about this project on my Github",
+    link: "https://github.com/dee077/Roxiler_Assignment", 
   },
 ];
 
@@ -38,17 +38,17 @@ const socials = [
   },
   {
     id: 3,
-    icon: <FaExternalLinkAlt className="text-gray-700 text-3xl mr-4" />,
+    icon: <span className="text-3xl mr-4" >🚀 </span>,
     title: "Portfolio",
     description: "Visit My personal Portfolio website.",
-    link: "https://twitter.com/deepanshusahu",
+    link: "https://portfolio2.deepanshu-sahu-projects.live/",
   },
   {
     id: 4,
     icon: <img src={googleDriveLogo} alt="Postman" className="w-8 h-8 mr-4" />,
     title: "Resume",
     description: "Checkout my updated Resume.",
-    link: "https://facebook.com/deepanshu.sahu",
+    link: "https://drive.google.com/file/d/142wFlytGNm2kwQX0BPIlF7-jzD1bIKBk/view?usp=sharing",
   },
 ];
 
