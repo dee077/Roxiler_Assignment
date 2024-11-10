@@ -94,7 +94,7 @@ Follow these steps to get the project running locally:
    cd backend
    npm start
    ```
-   Access the app at `http://localhost:3000` and keep the backend running on `http://localhost:3000`.
+   Access the app at `http://localhost:3000` and keep the backend running on `http://localhost:5000`.
 
 ## API Endpoints
 
