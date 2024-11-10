@@ -134,7 +134,7 @@ The following API endpoints have been created to fulfill the assignment requirem
      GET https://roxiler-assignment-be.vercel.app/api/list-transactions
      ```
 
-### 3. Bar Chart Data (Price Range Analysis)
+### 3. Bar Chart Data
    - **Endpoint**: `GET /api/barchart`
    - **Description**: Provides data for a bar chart showing item counts in specific price ranges for the selected month.
    - **Price Ranges**:
@@ -153,7 +153,7 @@ The following API endpoints have been created to fulfill the assignment requirem
      GET https://roxiler-assignment-be.vercel.app/api/bar-chart?month=March
      ```
 
-### 4. Pie Chart Data (Category Analysis)
+### 4. Pie Chart Data
    - **Endpoint**: `GET /api/piechart`
    - **Description**: Provides data for a pie chart showing unique categories and the number of items in each category for the selected month.
    - **Example Request**:
@@ -161,7 +161,7 @@ The following API endpoints have been created to fulfill the assignment requirem
      GET https://roxiler-assignment-be.vercel.app/api/pie-chart?month=March
      ```
 
-### 5. Combined Data (All APIs in One)
+### 5. Combined Data
    - **Endpoint**: `GET /api/combined`
    - **Description**: Combines responses from the `transactions`, `statistics`, `barchart`, and `piechart` endpoints for comprehensive data analysis.
    - **Example Request**:
