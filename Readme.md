@@ -43,7 +43,7 @@ All backend APIs are implemented using **Express.js** in Node.js. These APIs pro
 
 4. **API Documentation**:
    - All APIs have been thoroughly documented in a `Postman workspace` for easy testing and reference. Access the [postman 
-     workspace](https://postman.com/path/to/your/workspace).
+     workspace](https://www.postman.com/flight-physicist-9054540/workspace/roxiler-assignment/collection/27758306-3059ccef-c1bd-4e5b-aa40-4fbf3e78c396?action=share&creator=27758306).
 
 5. **Deployment**:
    - The app is deployed on `Vercel` for reliable, serverless hosting. Access the live app at [https://roxiler- 
